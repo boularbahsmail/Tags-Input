@@ -1,0 +1,88 @@
+
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Overpass", sans-serif;
+  margin: 0;
+}
+
+.tags-input {
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	min-height: 48px;
+	width: 480px;
+	padding: 0 8px;
+	border: 1px solid #eee;
+	border-radius: 6px;
+}
+
+ .tags-input:focus-within {
+	 border: 1px solid teal;
+}
+
+.tags-input input {
+	flex: 1;
+	border: none;
+	height: 46px;
+	font-size: 14px;
+	padding: 5px;
+}
+
+.tags-input input:focus {
+	outline: transparent;
+}
+
+#tags {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 8px 0 0 0;
+}
+
+.tag {
+	width: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	padding: 6px 10px;
+	font-size: 14px;
+	list-style: none;
+	border-radius: 6px;
+	margin: 0 8px 8px 0;
+	background-color: teal;
+}
+
+.tag .tag-close-icon {
+	font-size: 13px;
+  font-weight: initial;
+	margin-left: 8px;
+	color: teal;
+	border-radius: 50%;
+	background: #fff;
+	cursor: pointer;
+  height: 17px;
+  width: 17px;
+  display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+ @media screen and (max-width: 567px) {
+	.tags-input {
+		width: calc(100vw - 32px);
+	}
+
+  body {
+    height: auto;
+  }
+}
+ 
